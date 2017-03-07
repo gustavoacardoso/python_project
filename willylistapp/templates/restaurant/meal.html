@@ -24,7 +24,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                    {% for meal in meals %}
+                    {% for meal in meals %} <!-- this loop goes over every single meal inside meals collection  -->
                         <tr>
                           <td scope="row">{{ meal.id }}</td>
                           <td><a href="{% url 'restaurant-edit-meal' meal.id %}">{{ meal.name }}</a></td>
