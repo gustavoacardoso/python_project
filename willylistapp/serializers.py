@@ -1,3 +1,5 @@
+# Serializers transforms python database to Json format
+
 from rest_framework import serializers
 
 from willylistapp.models import Restaurant, \
@@ -6,6 +8,7 @@ from willylistapp.models import Restaurant, \
     Driver, \
     Order, \
     OrderDetails
+# back slahes \ used for break the lines
 
 class RestaurantSerializer(serializers.ModelSerializer):
     logo = serializers.SerializerMethodField()
